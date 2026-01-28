@@ -25,8 +25,8 @@ const Header = () => {
             </li>
           </ul>
           <div className=" flex items-center justify-center space-x-[16px]">
-            <img src="src/assets/Light-Dark.svg" alt="Light-Dark-icon" />
-            <Button>Download CV</Button>
+            <img src="src/assets/Light-Dark.svg" alt="Light-Dark-icon" className=" w-[24px] h-[24px] hover:bg-black" />
+            <Button variant="primary" size="md" className="w-[136px] h-[36px]">Download CV</Button>
           </div>
         </div>
       </div>
