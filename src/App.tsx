@@ -1,21 +1,25 @@
-import { useState } from "react";
+import Header from "./components/Header";
+import Hero from "./components/Header";
+import About from "./components/Header";
+import Skills from "./components/Header";
+import Experience from "./components/Header";
+import Work from "./components/Header";
+import Testimonials from "./components/Header";
+import ContactMe from "./components/Header";
+import Footer from "./components/Header";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+export default function App() {
   return (
-    <main className="flex flex-col items-center gap-8 py-16 max-w-[1280px] mx-auto">
-      <h1 className="text-4xl font-bold">Hello React & Tailwind!</h1>
-      <div className="flex flex-row items-center gap-6">
-        <button
-          className="bg-sky-300 px-3 py-2 rounded hover:bg-sky-400"
-          onClick={() => setCount(count + 1)}
-        >
-          Count: {count}
-        </button>
-      </div>
-    </main>
+    <>
+      <Header />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Work />
+      <Testimonials />
+      <ContactMe />
+      <Footer />
+    </>
   );
 }
-
-export default App;
