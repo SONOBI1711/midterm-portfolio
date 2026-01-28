@@ -1,12 +1,12 @@
 import Header from "./components/Header";
-import Hero from "./components/Header";
-import About from "./components/Header";
-import Skills from "./components/Header";
-import Experience from "./components/Header";
-import Work from "./components/Header";
-import Testimonials from "./components/Header";
-import ContactMe from "./components/Header";
-import Footer from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Work from "./components/Work";
+import Testimonials from "./components/Testimonials";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
