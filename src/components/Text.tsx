@@ -1,9 +1,14 @@
-const Text = ({
-  heading = "",
-  paragraphs = [],
-  list = [],
-  variant = "default",
-}) => {
+type ContentItem =
+  | { type: "p"; text: string }
+  | { type: "list"; items: string[] };
+
+type TextProps = {
+  heading: string;
+  variant?: "hero" | "about";
+  content: ContentItem[];
+};
+
+const Text = ({ heading, variant = "about", content }: TextProps) => {
   const headingStyle =
     variant === "hero"
       ? "text-[60px] leading-[72px] font-bold"
@@ -16,23 +21,40 @@ const Text = ({
       {/* Heading */}
       <h1 className={headingStyle}>{heading}</h1>
 
-      {/* Paragraphs */}
+      {/* Content */}
       <div className="flex flex-col gap-4">
-        {paragraphs.map((text, index) => (
-          <p key={index} className={paragraphStyle}>
-            {text}
-          </p>
-        ))}
-      </div>
+        {content.map((block, index) => {
+          if (block.type === "p") {
+            return (
+              <p key={index} className={paragraphStyle}>
+                {block.text}
+              </p>
+            );
+          }
 
-      {/* List */}
-      {list.length > 0 && (
-        <ul className="list-disc pl-5 text-[16px] leading-[24px] text-gray-600">
-          {list.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      )}
+          if (block.type === "list") {
+            return (
+              <ul
+                key={index}
+                className="
+                  list-disc 
+                  pl-5 
+                  grid grid-cols-2 
+                  gap-x-12 gap-y-2
+                  text-[16px] leading-[24px] 
+                  text-gray-600
+                "
+              >
+                {block.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            );
+          }
+
+          return null;
+        })}
+      </div>
     </div>
   );
 };

@@ -13,6 +13,7 @@ export default function App() {
     <>
       <Header />
       <Hero />
+      <About />
       {/* <About />
       <Skills />
       <Experience />
