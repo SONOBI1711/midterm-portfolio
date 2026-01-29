@@ -1,9 +1,9 @@
 import SkillItem from "./SkillItem";
-import { skill } from "../data/skills"
+import { skills } from "../data/skills"
 
 const Skills = () => {
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20 h-[560px] mt-[700px]">
       <div className="max-w-[1240px] mx-auto text-center">
         {/* Label */}
         <p className="text-sm text-gray-500 mb-2">Skills</p>
