@@ -5,7 +5,7 @@ type Icon={
 export const WorkIcon=({ icon: Icon }) => {
     return(
         <div className="mt-4">
-
+            {icon}
         </div>
     )
 
