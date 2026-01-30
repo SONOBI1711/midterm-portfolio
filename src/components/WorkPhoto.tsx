@@ -1,16 +1,7 @@
-type WorkPhotoData = {
-  src: string;
-  alt: string;
-  className: string;
-};
-
-export const WorkPhoto = ({ src, alt, className }: WorkPhotoData) => {
+export const WorkPhoto = ({ src, alt }) => {
   return (
-    <div
-      className={`w-full max-w-[480px] aspect-[480/384] rounded-xl overflow-hidden ${className}`}
-    >
+    <div className="w-[480px] h-[384px] rounded-[12px] overflow-hidden">
       <img src={src} alt={alt} className="w-full h-full object-cover" />
     </div>
   );
 };
-

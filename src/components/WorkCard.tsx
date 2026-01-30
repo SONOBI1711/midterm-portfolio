@@ -1,48 +1,48 @@
-import WorkPhoto from "./WorkPhoto";
-import WorkTag from "./WorkTag";
-import WorkIcon from "./WorkIcon";
+import { WorkPhoto } from "./WorkPhoto";
+import { WorkTag } from "./WorkTag";
+import { WorkIcon } from "./WorkIcon";
 
-type WorkCardData = {
-  title: string;
-  description: string;
-  image: string;
-  tags: string[];
-  icon: string;
-  reverse?: boolean; // reverse dùng để đảo layout (so le)
-};
-
-const WorkCard = ({
+export const WorkCard = ({
   title,
   description,
   image,
   tags,
   icon,
   reverse = false,
-}: WorkCardData) => {
+}) => {
   return (
     <div
       className={`
-        flex items-center gap-10
-        p-8 bg-white rounded-2xl shadow-sm
+        flex w-[1152px]
+        mx-auto  
+        justify-center
+        
+        rounded-[12px] overflow-hidden
+        shadow-md bg-white
         ${reverse ? "flex-row-reverse" : ""}
       `}
     >
-      {/*  Image */}
-      <WorkPhoto src={image} alt={title} />
+      {/* Left - Gray Image Area */}
+      <div className="w-[576px] bg-gray-100 flex justify-center items-center  pt-[48px] pb-[34px]">
+        <WorkPhoto src={image} alt={title} />
+      </div>
 
-      {/* Text */}
-      <div>
-        <h3 className="text-xl font-semibold">{title}</h3>
+      {/* Right - White Text Area */}
+      <div className="w-[576px] bg-white  px-[48px] pt-[48px] pb-[34px]">
+        <div className="flex flex-col gap-[24px]">
+          <h3 className="text-[20px] leading-[28px] font-semibold text-gray-900">
+            {title}
+          </h3>
 
-        <p className="mt-3 text-gray-600">
-          {description}
-        </p>
+          <p className=" text-gray-600 text-[16px] font-normal leading-[24px] w-[440px] h-[96px]">
+            {description}
+          </p>
 
-        <WorkTag tags={tags} />
-        <WorkIcon />
+          <WorkTag tags={tags} />
+
+          <WorkIcon icon={icon} />
+        </div>
       </div>
     </div>
   );
 };
-
-export default WorkCard;

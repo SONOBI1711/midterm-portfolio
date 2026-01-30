@@ -1,18 +1,14 @@
-type WorkTagData = {
-    tags:string[];
-}
-
-export default WorkTag=({ tags: WorkTagData })=>{
-    return(
-        <div className="flex gap-2 mt-4 flex-wrap">
+export const WorkTag = ({ tags }) => {
+  return (
+    <div className="flex gap-2 flex-wrap">
       {tags.map((tag) => (
         <span
           key={tag}
-          className="px-3 py-1 text-sm bg-gray-100 rounded-full"
+          className=" px-[20px] py-[4px] text-[14px] leading-[20px] bg-gray-200 rounded-[12px]"
         >
           {tag}
         </span>
       ))}
     </div>
-    );
-}
+  );
+};

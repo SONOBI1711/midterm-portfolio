@@ -1,19 +1,17 @@
-import WorkCard from "./WorkCard";
-import {WorkObject} from "./WorkObject";
-
-const Work = () => {
+import { WorkCard } from "./WorkCard";
+import { WorkObject } from "./WorkObject";
+import Button from "./Button";
+import SectionTitle from "./SectionTitle";
+export const Work = () => {
   return (
-    <section className="py-20">
-      <div className="max-w-[1240px] mx-auto px-6">
-        
+    <section className="py-[96px]">
+      <div className="max-w-[1280px] mx-auto px-6 flex flex-col justify-center items-center">
         {/* Title */}
-        <h2 className="text-4xl font-bold text-center">
+        <Button variant="secondary" size="sm" className="w-[75px] h-[28px]">
           Work
-        </h2>
+        </Button>
 
-        <p className="text-center text-gray-500 mt-3">
-          Some of the noteworthy projects I have built:
-        </p>
+        <SectionTitle text="Some of the noteworthy projects I have built:"></SectionTitle>
 
         {/* Cards */}
         <div className="mt-12 flex flex-col gap-12">
@@ -25,13 +23,11 @@ const Work = () => {
               image={object.image}
               tags={object.tags}
               reverse={index % 2 === 1}
+              icon={object.icon}
             />
           ))}
         </div>
-
       </div>
     </section>
   );
 };
-
-export default Work;
