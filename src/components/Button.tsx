@@ -13,10 +13,12 @@ export default function Button({ children, variant, size, className = "" }) {
   };
 
   return (
-    <button
-      className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
-    >
-      {children}
-    </button>
+    <div className="flex justify-center">
+      <button
+        className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
+      >
+        {children}
+      </button>
+    </div>
   );
 }

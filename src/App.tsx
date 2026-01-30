@@ -17,6 +17,7 @@ export default function App() {
       <Skills />
       <Experience />
       <Work />
+      <Testimonials />
       {/* <About />
       <Skills />
       <Experience />

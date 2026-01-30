@@ -7,7 +7,7 @@ type ExperienceCardData = {
 
 const ExperienceCard = ({ logo, title, date, points }: ExperienceCardData) => {
   return (
-    <div className="w-full max-w-[896px]  bg-white rounded-[12px] border border-gray-200 p-[32px]">
+    <div className="w-full max-w-[896px]  bg-white rounded-[12px] border border-gray-200 p-[32px] shadow-md">
       <div className="flex items-start justify-between ">
         {/* Logo */}
         <img src={logo} alt="company logo" className="w-[90px] h-auto" />
