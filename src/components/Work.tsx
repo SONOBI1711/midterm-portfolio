@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 export const Work = () => {
   return (
     <section className="py-[96px] h-[1800px]">
-      <div className="max-w-[1280px] mx-auto px-6 flex flex-col justify-center items-center">
+      <div className="max-w-[1280px] mx-auto flex flex-col justify-center items-center">
         {/* Title */}
         <Button variant="secondary" size="sm" className="w-[75px] h-[28px]">
           Work
