@@ -4,7 +4,7 @@ export const WorkObject = [
     title: "Fiskil",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-    image: "/src/assets/WorkPicture.png",
+    image: "/WorkPicture.png",
     tags: [
       "React",
       "Next.js",
@@ -17,7 +17,7 @@ export const WorkObject = [
       "Storybook",
       "Git",
     ],
-    icon: "/src/assets/Icon-share.svg",
+    icon: "/Icon-share.svg",
   },
 
   {
@@ -25,7 +25,7 @@ export const WorkObject = [
     title: "Fiskil",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-    image: "/src/assets/WorkPicture.png",
+    image: "/WorkPicture.png",
     tags: [
       "React",
       "Next.js",
@@ -38,7 +38,7 @@ export const WorkObject = [
       "Storybook",
       "Git",
     ],
-    icon: "/src/assets/Icon-share.svg",
+    icon: "/Icon-share.svg",
   },
 
   {
@@ -46,7 +46,7 @@ export const WorkObject = [
     title: "Fiskil",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-    image: "/src/assets/WorkPicture.png",
+    image: "/WorkPicture.png",
     tags: [
       "React",
       "Next.js",
@@ -59,6 +59,6 @@ export const WorkObject = [
       "Storybook",
       "Git",
     ],
-    icon: "/src/assets/Icon-share.svg",
+    icon: "/Icon-share.svg",
   },
 ];

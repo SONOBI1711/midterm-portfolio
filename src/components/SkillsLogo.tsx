@@ -1,22 +1,22 @@
 const SkillLogo = () => {
   const skills = [
-    { name: "JavaScript", icon: "src/assets/icon-javscript.svg" },
-    { name: "TypeScript", icon: "src/assets/icon-typescript.svg" },
-    { name: "React", icon: "src/assets/icon-react.svg" },
-    { name: "Next.js", icon: "src/assets/icon-nextjs.svg" },
-    { name: "Node.js", icon: "src/assets/icon-nodejs.svg" },
-    { name: "Express.js", icon: "src/assets/icon-express.svg" },
-    { name: "Nest.js", icon: "src/assets/icon-nest.svg" },
-    { name: "Socket.io", icon: "src/assets/icon-socket.svg" },
+    { name: "JavaScript", icon: "/icon-javscript.svg" },
+    { name: "TypeScript", icon: "/icon-typescript.svg" },
+    { name: "React", icon: "/icon-react.svg" },
+    { name: "Next.js", icon: "/icon-nextjs.svg" },
+    { name: "Node.js", icon: "/icon-nodejs.svg" },
+    { name: "Express.js", icon: "/icon-express.svg" },
+    { name: "Nest.js", icon: "/icon-nest.svg" },
+    { name: "Socket.io", icon: "/icon-socket.svg" },
 
-    { name: "PostgreSQL", icon: "src/assets/icon-postgresql.svg" },
-    { name: "MongoDB", icon: "src/assets/icon-mongodb.svg" },
-    { name: "Sass/Scss", icon: "src/assets/icon-sass.svg" },
-    { name: "Tailwindcss", icon: "src/assets/icon-tailwindcss.svg" },
-    { name: "Figma", icon: "src/assets/icon-figma.svg" },
-    { name: "Cypress", icon: "src/assets/icon-cypress.svg" },
-    { name: "Storybook", icon: "src/assets/icon-storybook.svg" },
-    { name: "Git", icon: "src/assets/icon-git.svg" },
+    { name: "PostgreSQL", icon: "/icon-postgresql.svg" },
+    { name: "MongoDB", icon: "/icon-mongodb.svg" },
+    { name: "Sass/Scss", icon: "/icon-sass.svg" },
+    { name: "Tailwindcss", icon: "/icon-tailwindcss.svg" },
+    { name: "Figma", icon: "/icon-figma.svg" },
+    { name: "Cypress", icon: "/icon-cypress.svg" },
+    { name: "Storybook", icon: "/icon-storybook.svg" },
+    { name: "Git", icon: "/icon-git.svg" },
   ];
 
   return (

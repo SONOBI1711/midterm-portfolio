@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-[1280px] mx-auto h-auto">
         <div className="flex justify-center item-center gap-[8px]">
           <img
-            src="src/assets/Copyright.svg"
+            src="/Copyright.svg"
             alt=""
             className="w-4 h-4 relative top-[2px]"
           />

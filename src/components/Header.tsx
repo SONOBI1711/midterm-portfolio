@@ -26,7 +26,7 @@ const Header = () => {
           </ul>
           <div className=" flex items-center justify-center space-x-[16px]">
             <img
-              src="src/assets/Light-Dark.svg"
+              src="/Light-Dark.svg"
               alt="Light-Dark-icon"
               className=" w-[24px] h-[24px] hover:bg-black"
             />

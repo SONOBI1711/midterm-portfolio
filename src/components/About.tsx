@@ -19,7 +19,7 @@ const About = () => {
           <div className="flex justify-between  w-full ">
             <div className="image-section w-[584px]">
               <Avatar
-                src="src/assets/About-Avatar.png"
+                src="/About-Avatar.png"
                 alt="About-Avatar"
                 className="w-[440px] h-[520px]"
               />

@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
         <div className="image-section">
           <Avatar
-            src="src/assets/Hero-Avatar.png"
+            src="/Hero-Avatar.png"
             alt="Hero-Avatar"
             className="w-[320px] h-[360px]"
           />

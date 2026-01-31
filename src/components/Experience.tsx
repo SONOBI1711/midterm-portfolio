@@ -16,7 +16,7 @@ const Experience = () => {
             <SectionTitle text="Here is a quick summary of my most recent experiences:"></SectionTitle>
           </div>
           <ExperienceCard
-            logo="src/assets/logo-upwork.svg"
+            logo="/logo-upwork.svg"
             title="Sr. Frontend Developer"
             date="Nov 2021 - Present"
             points={[
@@ -28,7 +28,7 @@ const Experience = () => {
           />
 
           <ExperienceCard
-            logo="src/assets/logo-upwork.svg"
+            logo="/logo-upwork.svg"
             title="Team Lead"
             date="Jul 2017 - Oct 2021"
             points={[
@@ -40,7 +40,7 @@ const Experience = () => {
           />
 
           <ExperienceCard
-            logo="src/assets/logo-upwork.svg"
+            logo="/logo-upwork.svg"
             title="Full Stack Developer"
             date="Dec 2015 - May 2017"
             points={[
