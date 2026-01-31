@@ -18,13 +18,8 @@ export default function App() {
       <Experience />
       <Work />
       <Testimonials />
-      {/* <About />
-      <Skills />
-      <Experience />
-      <Work />
-      <Testimonials />
       <ContactMe />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
