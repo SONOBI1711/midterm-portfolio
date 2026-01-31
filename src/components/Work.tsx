@@ -2,7 +2,7 @@ import { WorkCard } from "./WorkCard";
 import { WorkObject } from "./WorkObject";
 import Button from "./Button";
 import SectionTitle from "./SectionTitle";
-export const Work = () => {
+export default function Work () {
   return (
     <section className="py-[96px] h-[1800px]">
       <div className="max-w-[1280px] mx-auto flex flex-col justify-center items-center">
